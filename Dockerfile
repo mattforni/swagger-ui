@@ -12,7 +12,7 @@ ENV API_KEY "**None**"
 ENV SWAGGER_JSON "/app/swagger.json"
 ENV PORT 8080
 ENV BASE_URL ""
-ENV URLS="[ { url: \"http://localhost:8080/v1/swagger.json\", name: \"Gremlin\" } ]"
+ENV URLS="[ { url: \"https://api.staging.gremlin.com/v1/swagger.json\", name: \"Gremlin\" } ]"
 
 COPY ./docker/nginx.conf ./docker/cors.conf /etc/nginx/
 
